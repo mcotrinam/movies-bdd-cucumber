@@ -28,7 +28,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   # enter step(s) to ensure that PG and R movies are visible
   # enter step(s) to ensure that other movies are not visible
     When I check the following ratings: PG, R
-    When I uncheck the following rating: PG-13, G, NC-17
+    When I uncheck the following ratings: PG-13, G, NC-17
     And I press "ratings_submit"
 
     Then I should see "Amelie"
